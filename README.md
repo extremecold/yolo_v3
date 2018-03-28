@@ -43,3 +43,31 @@ bicycle: 99%
 ![image](images/kite.png)
 
 ### 多张图片的识别
+
+
+```
+./darknet detect cfg/yolov3.cfg ../yolov3.weights
+layer     filters    size              input                output
+    0 conv     32  3 x 3 / 1   416 x 416 x   3   ->   416 x 416 x  32  0.299 BFLOPs
+    1 conv     64  3 x 3 / 2   416 x 416 x  32   ->   208 x 208 x  64  1.595 BFLOPs
+    2 conv     32  1 x 1 / 1   208 x 208 x  64   ->   208 x 208 x  32  0.177 BFLOPs
+......
+  103 conv    128  1 x 1 / 1    52 x  52 x 256   ->    52 x  52 x 128  0.177 BFLOPs
+  104 conv    256  3 x 3 / 1    52 x  52 x 128   ->    52 x  52 x 256  1.595 BFLOPs
+  105 conv    255  1 x 1 / 1    52 x  52 x 256   ->    52 x  52 x 255  0.353 BFLOPs
+  106 detection
+Loading weights from ../yolov3.weights...Done!
+Enter Image Path: data/horses.jpg                  
+data/horses.jpg: Predicted in 23.668861 seconds.
+horse: 98%
+horse: 97%
+horse: 92%
+horse: 89%
+Enter Image Path: 
+
+```
+
+![image](images/horses.png)
+
+
+
