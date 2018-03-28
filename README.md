@@ -12,6 +12,8 @@ make
 
 [网络权重下载](https://pjreddie.com/media/files/yolov3.weights)
 
+### 单张图片的识别
+
 加载网络权重，并对图片进行预测
 ```
 ./darknet detect cfg/yolov3.cfg ../yolov3.weights data/dog.jpg 
@@ -40,4 +42,4 @@ bicycle: 99%
 
 ![image](images/kite.png)
 
-
+### 多张图片的识别
