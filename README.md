@@ -122,4 +122,13 @@ bicycle: 99%
 
 ![image](images/dogt0.5.png)
 
+**由于没有NVIDIA显卡，所以这里没做实时识别**
+
+## 训练网络
+
+### VOC数据
+
+
+
+
 
